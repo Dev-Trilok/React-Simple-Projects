@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Post.css';
 
 const post = ({title,author, clicked}) => (
@@ -12,4 +11,4 @@ const post = ({title,author, clicked}) => (
     </article>
 );
 
-export default post;
+export default post; //withRouter
