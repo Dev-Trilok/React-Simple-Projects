@@ -1,15 +1,14 @@
-import axios from '../../../axios';
+import axios from "../../../axios";
 import React, { Component } from "react";
-import Post from '../../../components/Post/Post'
+import Post from "../../../components/Post/Post";
 import "./Posts.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default class Posts extends Component {
   state = {
     posts: [],
   };
   componentDidMount() {
-      
     axios
       .get("/posts")
       .then((Response) => {
@@ -17,7 +16,7 @@ export default class Posts extends Component {
         const updatedPosts = posts.map((post) => {
           return {
             ...post,
-            author: "max",
+            author: "Trilok",
           };
         });
         this.setState({ posts: updatedPosts });
@@ -28,20 +27,24 @@ export default class Posts extends Component {
   }
   postSelectedHandler = (id) => {
     this.setState({ selectedPostId: id });
+    // this.props.history.push({pathname:'/' +id});
+    // this.props.history.push('/' +id);
+
   };
   render() {
     let posts = <p style={{ textAlign: "center" }}> Something went wrong </p>;
     if (!this.state.error) {
       posts = this.state.posts.map((post) => {
         return (
-            <Link to={'/' +post.id}   key={post.id}>
-          <Post
-          
-            title={post.title}
-            author={post.author}
-            clicked={() => this.postSelectedHandler(post.id)}
-          />
-          </Link>
+          // <Link to={"/" + post.id} key={post.id}>
+            <Post
+              key={Post.id}
+              title={post.title}
+              author={post.author}
+              {...this.props}
+              clicked={() => this.postSelectedHandler(post.id)}
+            />
+          // </Link>
         );
       });
     }
