@@ -1,0 +1,69 @@
+.Main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: teal;
+    text-align: center;
+}
+.Center_Div{
+    width: 25%;
+    height: 80vh;
+    background: tan;
+    background-origin: 5px 5px 25px -5x rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+h2{
+    color: aliceblue;
+    background: transparent;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 25px -5x rgba(0,0,0,0.3);;
+}
+input{
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid springgreen;
+    outline: none;
+}
+button{
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: teal;
+    color: #FFF;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5x rgba(0,0,0,0.3);;
+    
+}
+
+button:hover{
+    background-color: cadetblue;
+}
+ol{
+    margin-top: 30px;
+}
+ol li{
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: yellow;
+    text-transform: capitalize;
+}

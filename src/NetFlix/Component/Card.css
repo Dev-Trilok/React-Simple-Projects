@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #d2dbdd;
+}
+.headingStyle {
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background-color: #fff; 
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.cards {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #fff;
+  width: 21.25%;
+  border-radius: 12px;
+    box-shadow: 0px 13px 18px -8px rgb(0, 0, 0.1);
+    float: left;
+}
+ .card:hover{
+     box-shadow: 0px 30px 18px -8px  rgb(0, 0, 0.1) ;
+     transform: scale(1.05, 1.05);
+ }
+
+.card_img {
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card_info {
+    background: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 16PX 24PX 24PX 24PX;
+    background-color: #fff;
+}
+
+.card_category{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing:2px;
+    font-weight: 500;
+    color: #868686;
+    background-color: #fff;
+
+}
+.card_title {
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  font-size: 13px;
+background-color: #fff;
+}
+button{
+    pad: 5px 8px;
+    font-weight:500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #868686;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid black;
+    
+}
